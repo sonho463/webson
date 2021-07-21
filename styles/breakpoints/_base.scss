@@ -1,6 +1,11 @@
+//レイアウト確認
+* {
+  border: dashed 1px #333;
+}
+
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
-  max-width: 1600px;
+  // max-width: 1600px;
   margin: 0 auto;
   text-align: justify;
 }
@@ -54,22 +59,21 @@ li {
   background: linear-gradient(transparent 60%, lightcyan 0%);
 }
 
-.title{
-	font-size: 48px;
-	padding: 20px 10px;
-	margin-top: 100px;
+.title {
+  font-size: 48px;
+  padding: 20px 10px;
+  margin-top: 100px;
 }
 
 // header
 header {
-	background-color:$--main-primary;
+  background-color: $--main-primary;
 }
 
-.nav{
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -82,10 +86,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0;
   gap: 20px;
-	a{
-		color: #fff;
-	}
+  a {
+    color: #fff;
+  }
 }
 
 .menu-item {
@@ -99,19 +104,20 @@ header {
   height: 700px;
   display: flex;
   align-items: center;
-	// background-image: url(../../images/arrow.png);
-	// background-repeat: no-repeat;
-	// background-position-x: right;
-	// background-position-y:30%;
+  animation: slideIn 3s ease-in;
+  // background-image: url(../../images/arrow.png);
+  // background-repeat: no-repeat;
+  // background-position-x: right;
+  // background-position-y:30%;
 }
 
 .hero-header__heading {
-  font-size: 16vw;
+  font-size: 220px;
   line-height: 1;
 }
 
 .hero-header__sub-heading {
-  font-size:4vw;
+  font-size: 4vw;
   line-height: 1;
 }
 
@@ -119,37 +125,34 @@ header {
   font-size: 2vw;
 }
 
-.arrow{
-	width: 40%;
-	position: absolute;
-	right:0;
-	z-index: -1;
-
+.arrow {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
 }
 
 // skills
-.skills__title{
-	background-color: $--main-primary;
-	color: #fff;
+.skills__title {
+  background-color: $--main-primary;
+  color: #fff;
 }
 
-.skills__card{
-	display: flex;
-	gap:20px;
-	margin-top: 50px;
-	margin-left: 200px;
+.skills__card {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 200px;
 }
 
 .skills__ico {
-	width: 100px;
+  width: 100px;
 }
 
-
-
 // footer
-footer{
-	height: 300px;
-	padding: 50px;
-	color: #fff;
-	background-color: $--main-primary;
+footer {
+  height: 300px;
+  padding: 50px;
+  color: #fff;
+  background-color: $--main-primary;
 }

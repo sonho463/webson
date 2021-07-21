@@ -1,6 +1,9 @@
+* {
+  border: dashed 1px #333;
+}
+
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
-  max-width: 1600px;
   margin: 0 auto;
   text-align: justify;
 }
@@ -76,6 +79,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0;
   gap: 20px;
 }
 
@@ -93,10 +97,11 @@ header {
   height: 700px;
   display: flex;
   align-items: center;
+  animation: slideIn 3s ease-in;
 }
 
 .hero-header__heading {
-  font-size: 16vw;
+  font-size: 220px;
   line-height: 1;
 }
 

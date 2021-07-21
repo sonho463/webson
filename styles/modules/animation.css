@@ -1,0 +1,9 @@
+@keyframes slideIn {
+  0% {
+    padding-left: 100%;
+  }
+  100% {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
