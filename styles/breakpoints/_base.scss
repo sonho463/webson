@@ -1,6 +1,6 @@
 //レイアウト確認
 * {
-  border: dashed 1px #333;
+  // border: dashed 1px #333;
 }
 
 body {
@@ -8,13 +8,18 @@ body {
   // max-width: 1600px;
   margin: 0 auto;
   text-align: justify;
+	background-color: $--main-secondary;
 }
 
 section {
-  max-width: 90%;
   margin: 0 auto;
+	padding: 100px 300px;
   // margin-bottom: 70px;
   // padding-top: 50px;
+}
+
+img{
+	width: 100%;
 }
 
 // マージン・パディング
@@ -63,17 +68,19 @@ li {
   font-size: 48px;
   padding: 20px 10px;
   margin-top: 100px;
+	width: 600px;
 }
 
 // header
-header {
-  background-color: $--main-primary;
+.header {
+  background-color: $--main-secondary;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+	padding: 10px 50px;
 }
 
 .header-logo {
@@ -88,9 +95,14 @@ header {
   justify-content: space-around;
   margin: 0;
   gap: 20px;
-  a {
-    color: #fff;
-  }
+	background-color: $--main-secondary;
+	border-radius:20px;
+	box-shadow:
+		3px 3px 5px $--main-primary,
+		// -5px -5px 5px $--main-primary,
+		// 5px -5px 5px $--main-primary,
+		0px 3px 5px $--main-primary,
+		;
 }
 
 .menu-item {
@@ -132,9 +144,32 @@ header {
   z-index: -1;
 }
 
+// services
+.services{
+	background-color: $--main-primary;
+	color: #fff;
+
+}
+
+
+.ly_card_wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+.card_image{
+	width:300px;
+}
+
+// price
+
+
+
 // skills
 .skills__title {
   background-color: $--main-primary;
+	border-radius: 50px;
+	padding: 0 50px;
   color: #fff;
 }
 
@@ -148,6 +183,10 @@ header {
 .skills__ico {
   width: 100px;
 }
+
+
+//performance
+
 
 // footer
 footer {

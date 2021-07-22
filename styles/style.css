@@ -1,16 +1,17 @@
-* {
-  border: dashed 1px #333;
-}
-
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
   margin: 0 auto;
   text-align: justify;
+  background-color: #f0f8ff;
 }
 
 section {
-  max-width: 90%;
   margin: 0 auto;
+  padding: 100px 300px;
+}
+
+img {
+  width: 100%;
 }
 
 .mb-sm {
@@ -59,16 +60,18 @@ li {
   font-size: 48px;
   padding: 20px 10px;
   margin-top: 100px;
+  width: 600px;
 }
 
-header {
-  background-color: #1b2f60;
+.header {
+  background-color: #f0f8ff;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 50px;
 }
 
 .header-logo img {
@@ -81,10 +84,9 @@ header {
   justify-content: space-around;
   margin: 0;
   gap: 20px;
-}
-
-.menu-list a {
-  color: #fff;
+  background-color: #f0f8ff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px #1b2f60, 0px 3px 5px #1b2f60;
 }
 
 .menu-item {
@@ -121,8 +123,24 @@ header {
   z-index: -1;
 }
 
+.services {
+  background-color: #1b2f60;
+  color: #fff;
+}
+
+.ly_card_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card_image {
+  width: 300px;
+}
+
 .skills__title {
   background-color: #1b2f60;
+  border-radius: 50px;
+  padding: 0 50px;
   color: #fff;
 }
 
