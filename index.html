@@ -18,56 +18,53 @@
 
 <body>
 	<header class="ly_header">
-		<section class="bl_nav">
-			<div class="el_headerLogo hl_shadow">
-				<figure class="el_headerLogo_imgWrapper">
-					<img src="./images/WEBSON.png" alt="">
-				</figure><!-- /.el_headerLo -->
-			</div><!-- /.header-logo -->
-			<nav class="bl_headerNav">
-				<ul class="bl_menuList">
-					<a href="#">
-						<li class="el_menuItem">
+		<section class="ly_header_inner">
+			<figure class="el_headerLogo hl_shadow">
+				<img src="./images/WEBSON.png" alt="">
+			</figure><!-- /.el_headerLo -->
+			<nav>
+				<ul class="bl_headerNav hl_shadow">
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							ホーム
-						</li><!-- /.el_menuItem -->
-					</a>
-					<a href="#">
-						<li class="el_menuItem">
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							サービス
-						</li><!-- /.el_menuItem -->
-					</a>
-					<a href="#">
-						<li class="el_menuItem">
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							料金
-						</li><!-- /.el_menuItem -->
-					</a>
-					<a href="#">
-						<li class="el_menuItem">
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							スキル
-						</li><!-- /.el_menuItem -->
-					</a>
-					<a href="#">
-						<li class="el_menuItem">
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							実績
-						</li><!-- /.el_menuItem -->
-					</a>
-					<a href="#">
-						<li class="el_menuItem">
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							WEBSONについて
-						</li><!-- /.el_menuItem -->
-					</a>
-					<a href="#">
-						<li class="el_menuItem">
-
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+					<li class="bl_headerNav_item">
+						<a class="bl_headerNav_link" href="#">
 							お問い合わせ
-						</li><!-- /.el_menuItem -->
-					</a>
-				</ul><!-- /.menu-list -->
-			</nav><!-- /.menu -->
-		</section><!-- /.nav -->
+						</a>
+					</li><!-- /.bl_headerNav_item -->
+				</ul><!-- /.bl_headerNav -->
+			</nav>
+		</section><!-- /.ly_header_inner -->
 	</header>
 	<main>
-		<section class="bl_hero">
+		<section class="ly_cont ly_cont_hero">
 			<div class="bl_hero_heading_wrapper">
 				<p class="bl_hero_subHeading">ウェブサイト制作・開発</p>
 				<h1 class="bl_hero_heading">WEBSON</h1>
@@ -79,11 +76,9 @@
 			<figure class="el_arrow_wrapper">
 				<img class="el_arrow" src="./images/arrow.png" alt="">
 			</figure><!-- /.el_arrow_wrapper -->
+		</section>
 
-		</section><!-- /.hero -->
-
-		<section class="bl_services">
-
+		<section class="ly_cont ly_cont_bgBlue">
 			<div class="bl_text-wrapper">
 				<h2 class="el_heading el_services__heading">
 					サービス内容
@@ -120,7 +115,7 @@
 
 		</section><!-- /.services -->
 
-		<section class="price">
+		<section class="ly_cont">
 			<h2 class="el_heading price__heading">
 				料金
 			</h2>
@@ -129,9 +124,32 @@
 				サブスクリプションによる契約など、お客様の状況に応じた契約が可能ですので、
 				お気軽にご相談ください。
 			</p><!-- /.description -->
+			<table>
+				<tr>
+					<th>無料プラン</th>
+					<th class="popular"><span class="inner"><span class="no1">人気No.1</span>初級プラン</span></th>
+					<th>上級プラン</th>
+				</tr>
+				<tr>
+					<td>¥0</td>
+					<td class="popular">¥5,000</td>
+					<td>¥8,000</td>
+				</tr>
+				<tr>
+					<td><a href="#">申し込み</a></td>
+					<td><a href="#">申し込み</a></td>
+					<td><a href="#">申し込み</a></td>
+				</tr>
+				<tr>
+					<td>保証なし</td>
+					<td class="popular">保証1ヶ月</td>
+					<td>保証3ヶ月</td>
+				</tr>
+			</table>
+
 		</section><!-- /.price -->
 
-		<section class="bl_skills">
+		<section class="ly_cont ly_cont_bgBlue">
 			<div class="el_heading_wrapper mb-md">
 				<h2 class="el_heading el_heading_skills">
 					スキル
@@ -139,10 +157,10 @@
 			</div><!-- /.el_heading_wrapper -->
 			<ul class="bl_skills_list">
 
-				<li class="el_article">
+				<li class="bl_article">
 
 					<figure class="el_article_image">
-						<img src="./images/html.jpg" alt="">
+						<img src="./images/skills/html.jpg" alt="">
 					</figure><!-- /.article_image -->
 
 					<div class="bl_skills_txtWrapper">
@@ -152,11 +170,13 @@
 						<p class="el_skills_item_txt">
 							HTMLのルールにしたがって、サイトのメッセージを適切に構造化します。そうすることで、ユーザーが検索したときに上位に表示されるようにします。
 						</p><!-- /.el_skills_item_txt -->
-					</div><!--/bl_skills_txtWrapper -->
-				<li class="el_article">
+					</div>
+					<!--/bl_skills_txtWrapper -->
+				</li>
+				<li class="bl_article">
 
 					<figure class="el_article_image">
-						<img src="./images/css.jpg" alt="">
+						<img src="./images/skills/css.jpg" alt="">
 					</figure><!-- /.article_image -->
 
 					<div class="bl_skills_txtWrapper">
@@ -166,11 +186,13 @@
 						<p class="el_skills_item_txt">
 							サイトのページを増やしたり、ちがう製作者に頼んだりしたいと思ったときに、困らないように設計します。
 						</p><!-- /.el_skills_item_txt -->
-					</div><!--/bl_skills_txtWrapper -->
-				<li class="el_article">
+					</div>
+					<!--/bl_skills_txtWrapper -->
+					</li>
+				<li class="bl_article">
 
 					<figure class="el_article_image">
-						<img src="./images/js.png" alt="">
+						<img src="./images/skills/js.png" alt="">
 					</figure><!-- /.article_image -->
 
 					<div class="bl_skills_txtWrapper">
@@ -180,11 +202,13 @@
 						<p class="el_skills_item_txt">
 							ウェブサイトにいろいろな動きを加えます。ユーザーの視線を誘導したり、知らせたい情報を強調したりします。
 						</p><!-- /.el_skills_item_txt -->
-					</div><!--/bl_skills_txtWrapper -->
-				<li class="el_article">
+					</div>
+					<!--/bl_skills_txtWrapper -->
+					</li>
+				<li class="bl_article">
 
 					<figure class="el_article_image">
-						<img src="./images/wordpress.png" alt="">
+						<img src="./images/skills/wordpress.png" alt="">
 					</figure><!-- /.article_image -->
 
 					<div class="bl_skills_txtWrapper">
@@ -194,11 +218,13 @@
 						<p class="el_skills_item_txt">
 							ブログを書くような形でコンテンツを更新できるようにします。既存のデザインから選んでサクッと構築することもできますし、オリジナルデザインをWordPressにして運用することもできます。
 						</p><!-- /.el_skills_item_txt -->
-					</div><!--/bl_skills_txtWrapper -->
-				<li class="el_article">
+					</div>
+					<!--/bl_skills_txtWrapper -->
+					</li>
+				<li class="bl_article">
 
 					<figure class="el_article_image">
-						<img src="./images/gatsby.png" alt="">
+						<img src="./images/skills/gatsby.png" alt="">
 					</figure><!-- /.article_image -->
 
 					<div class="bl_skills_txtWrapper">
@@ -208,20 +234,53 @@
 						<p class="el_skills_item_txt">
 							JAMstackという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
 						</p><!-- /.el_skills_item_txt -->
-					</div><!--/bl_skills_txtWrapper -->
+					</div>
+					<!--/bl_skills_txtWrapper -->
 
 				</li><!-- /.el_skills_item -->
 
 			</ul>
 
-
-
-
-
 		</section><!-- /.skills -->
 
-		<section class="performance">
+		<section class="ly_cont">
 			<h2 class="el_heading performance__heading">実績</h2>
+
+<ul>
+	<li class="bl_article bl_article_pfm">
+		<figure class="el_article_image">
+			<img src="./images/performance/01-techmeets.jpg" alt="">
+		</figure><!-- /.article_image -->
+
+		<div class="bl_skills_txtWrapper">
+			<h3 class="el_skills_itemHeading">
+				GatsbyJS
+			</h3><!-- /.el_skills_itemHeading -->
+			<p class="el_skills_item_txt">
+				JAMstackという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
+			</p><!-- /.el_skills_item_txt -->
+		</div>
+		<!--/bl_skills_txtWrapper -->
+
+	</li><!-- /.el_skills_item -->
+	<li class="bl_article bl_article_pfm">
+		<figure class="el_article_image">
+			<a href="https://horumont.info"><img src="./images/performance/02-takamina-link.jpg" alt=""></a>
+		</figure><!-- /.article_image -->
+
+		<div class="bl_skills_txtWrapper">
+			<h3 class="el_skills_itemHeading">
+				GatsbyJS
+			</h3><!-- /.el_skills_itemHeading -->
+			<p class="el_skills_item_txt">
+				JAMstackという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
+			</p><!-- /.el_skills_item_txt -->
+		</div>
+		<!--/bl_skills_txtWrapper -->
+
+	</li><!-- /.el_skills_item -->
+</ul>
+
 
 			現在教育系教材紹介サイトのコーディング、WordPress化進行中
 			学習リンク集１
@@ -233,7 +292,7 @@
 
 
 		</section><!-- /.performance -->
-		<section class="about">
+		<section class="ly_cont ly_cont_bgBlue">
 			<h2 class="el_heading about__heading">私について</h2>
 			<p class="description">
 				２０１９年春頃から本格的にプログラミングやウェブ制作の学習にとりくみはじめました。教員経験を通して培ってきたコミュニケーション力や課題解決力をウェブ制作事業によって社会に還元したいという思いが募り、現在副業でウェブ制作・開発にとりくんでいます。
@@ -242,12 +301,12 @@
 
 		</section><!-- /.about -->
 
-		<section class="contact">
+		<section class="ly_cont">
 			<h2 class="el_heading contact__heading">コンタクト</h2>
 
 		</section><!-- /.contact -->
 	</main>
-	<footer>
+	<footer class="ly_cont ly_cont_bgBlue">
 		<div class="footer">
 			<section class="info">
 				代表　そんほんす・孫弘樹

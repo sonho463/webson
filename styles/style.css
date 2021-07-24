@@ -1,9 +1,12 @@
 @keyframes slideIn {
   0% {
-    padding-top: 50%;
+    margin-top: 50%;
+  }
+  50% {
+    margin-top: -90px;
   }
   100% {
-    padding-top: 0px;
+    margin-top: 50px;
   }
 }
 
@@ -21,11 +24,6 @@ body {
   max-width: 1600px;
   text-align: justify;
   background-color: #f0f8ff;
-}
-
-section {
-  margin: 0 auto;
-  padding: 100px 250px;
 }
 
 figure {
@@ -74,19 +72,25 @@ li {
   background: linear-gradient(transparent 60%, lightcyan 0%);
 }
 
-.bl_nav {
+.ly_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.ly_header_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background-color: #f0f8ff;
 }
 
-.el_headerLogo_imgWrapper {
+.el_headerLogo {
   width: 80px;
 }
 
-.bl_menuList {
+.bl_headerNav {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -94,34 +98,46 @@ li {
   gap: 20px;
   background-color: #f0f8ff;
   border-radius: 20px;
-  box-shadow: 3px 3px 5px #b0c4de, 0px 3px 5px #b0c4de;
 }
 
 .hl_shadow {
   box-shadow: 3px 3px 5px #b0c4de, 0px 3px 5px #b0c4de;
 }
 
-.el_menuItem {
+.bl_headerNav_item {
   width: fit-content;
+  text-align: center;
+}
+
+.bl_headerNav_link {
+  position: relative;
+  display: block;
   padding: 10px 20px;
+  width: 100%;
+  height: auto;
   border-radius: 20px;
 }
 
-.el_menuItem:hover {
+.bl_headerNav_link:hover {
   text-decoration: underline;
   background-color: #1b2f60;
   color: #fff;
-  transition: .7s;
+  transition: 0.7s;
 }
 
-.bl_hero {
+.ly_cont {
+  margin: 0 auto;
+  padding: 100px 250px;
+}
+
+.ly_cont_hero {
   width: 80%;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 50px;
-  animation: fadeIn 1s ease forwards,slideIn 1s ease;
+  animation: fadeIn 1s ease-out forwards, slideIn 1s ease forwards;
 }
 
 .bl_hero_heading {
@@ -152,7 +168,7 @@ li {
   width: 600px;
 }
 
-.bl_services {
+.ly_cont_bgBlue {
   background-color: #1b2f60;
   color: #fff;
 }
@@ -190,7 +206,7 @@ li {
   text-align: left;
 }
 
-.el_article {
+.bl_article {
   display: flex;
   gap: 20px;
   width: 45%;
@@ -199,16 +215,97 @@ li {
 
 .el_article_image {
   flex: 1;
+  height: inherit;
+  overflow: hidden;
 }
 
 .bl_skills_txtWrapper {
   flex: 2;
 }
 
-footer {
-  height: 300px;
-  padding: 50px;
-  color: #fff;
-  background-color: #1b2f60;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table tr:last-child {
+  border-bottom: solid 1px #ddd;
+}
+
+table th {
+  text-align: center;
+  padding: 7px 0;
+  border-right: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  width: 33%;
+}
+
+table th:nth-child(1) {
+  background-color: #dddddd;
+}
+
+table th:nth-child(3) {
+  background-color: #f5b932;
+  color: white;
+}
+
+table tr:nth-child(2) td {
+  font-size: 30px;
+}
+
+table td {
+  text-align: center;
+  padding: 7px 0;
+  border-right: solid 1px #ddd;
+  border-left: solid 1px #ddd;
+  width: 155px;
+}
+
+table td a {
+  background-color: #25b327;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+table th.popular {
+  position: relative;
+}
+
+table th.popular span.no1 {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 30px);
+  background: #bdcc28;
+  font-size: 10px;
+  border-radius: 15px;
+  line-height: 1;
+  padding: 5px;
+}
+
+table th.popular span.inner {
+  position: absolute;
+  color: white;
+  background-color: #f34955;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.bl_article_pfm {
+  width: 100%;
+  font-size: 24px;
+}
+
+.bl_article_pfm img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
 }
 /*# sourceMappingURL=style.css.map */
