@@ -35,21 +35,20 @@ TweenMax.set(".char", {
   rotation: "-45",
 });
 
-// TweenMax.to('.bl_hero_heading',1,{
-// 	x:'0px',
-// 	opacity: '1',
-// 	rotation: '0'
-// 	});
+TweenMax.set(".el_arrow", {
+  opacity: "0",
+});
+
 const arrowAnimate = () => {
 	TweenMax.to(
 		".el_arrow",
 		0.5,
 		{
-			rotation: '360'
+			rotation: '360',
+			opacity: '1'
 		}
 	)
 };
-
 
 const stagger = () => {
 	TweenMax.staggerTo(
@@ -63,7 +62,7 @@ const stagger = () => {
 		},
 		0.2
 		);
-
 	}
+	
 	setTimeout(stagger,1000)
 	setTimeout(arrowAnimate,2500)
