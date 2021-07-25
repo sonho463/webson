@@ -1,3 +1,5 @@
+
+
 const lyConts = document.querySelectorAll(".ly_cont");
 console.log(lyConts);
 const cb = function (entries, observer) {
@@ -48,14 +50,19 @@ const arrowAnimate = () => {
 	)
 };
 
-TweenMax.staggerTo(
-  ".char",
-  0.5,
-  {
-    opacity: "1",
-    x: 0,
-    rotation: 0,
-		onComplete: arrowAnimate
-  },
-  0.2
-);
+
+const stagger = () => {
+	TweenMax.staggerTo(
+		".char",
+		0.5,
+		{
+			opacity: "1",
+			x: 0,
+			rotation: 0,
+			onComplete: arrowAnimate
+		},
+		0.2
+		);
+
+	}
+	setTimeout(stagger,1000)
