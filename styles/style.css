@@ -137,12 +137,17 @@ li {
   align-items: center;
   justify-content: center;
   padding: 0 50px;
-  animation: fadeIn 1s ease-out forwards, slideIn 1s ease forwards;
 }
 
 .bl_hero_heading {
   font-size: 220px;
   line-height: 1;
+}
+
+.char {
+  display: inline-block;
+  margin-right: -50px;
+  transform: translateX(-300px);
 }
 
 .bl_hero_subHeading {
@@ -307,5 +312,10 @@ table th.popular span.inner {
   height: 400px;
   object-fit: cover;
   object-position: top;
+}
+
+.test {
+  width: 200px;
+  z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */
