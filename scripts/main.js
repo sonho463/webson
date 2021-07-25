@@ -59,10 +59,11 @@ const stagger = () => {
 			opacity: "1",
 			x: 0,
 			rotation: 0,
-			onComplete: arrowAnimate
+			// onComplete: arrowAnimate
 		},
 		0.2
 		);
 
 	}
 	setTimeout(stagger,1000)
+	setTimeout(arrowAnimate,2500)
