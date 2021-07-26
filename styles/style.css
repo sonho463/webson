@@ -19,6 +19,10 @@
   }
 }
 
+* {
+  outline: dashed 1px skyblue;
+}
+
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
   max-width: 1600px;
@@ -70,6 +74,33 @@ li {
 
 .blue-line {
   background: linear-gradient(transparent 60%, lightcyan 0%);
+}
+
+.ly_cont {
+  margin: 0 auto;
+  padding: 100px 250px;
+}
+
+.el_heading {
+  font-size: 48px;
+  padding: 20px 10px;
+  width: 600px;
+}
+
+.el_description {
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.el_description__white {
+  color: #fff;
+}
+
+.ly_heading {
+  text-align: left;
+  font-size: 48px;
+  padding: 20px 10px;
+  width: 600px;
 }
 
 .ly_header {
@@ -125,18 +156,14 @@ li {
   transition: 0.7s;
 }
 
-.ly_cont {
-  margin: 0 auto;
-  padding: 100px 250px;
-}
-
 .ly_cont_hero {
   width: 80%;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 50px;
+  padding: 50px;
+  margin-top: 100px;
 }
 
 .bl_hero_heading {
@@ -164,13 +191,6 @@ li {
   position: absolute;
   right: 100px;
   z-index: -1;
-}
-
-.el_heading {
-  font-size: 48px;
-  padding: 20px 10px;
-  margin-top: 100px;
-  width: 600px;
 }
 
 .ly_cont_bgBlue {
@@ -228,78 +248,12 @@ li {
   flex: 2;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  table-layout: fixed;
-  width: 100%;
+.el_link_white {
+  color: skyblue;
 }
 
-table tr:last-child {
-  border-bottom: solid 1px #ddd;
-}
-
-table th {
-  text-align: center;
-  padding: 7px 0;
-  border-right: solid 1px #ddd;
-  border-left: solid 1px #ddd;
-  width: 33%;
-}
-
-table th:nth-child(1) {
-  background-color: #dddddd;
-}
-
-table th:nth-child(3) {
-  background-color: #f5b932;
+.el_link_white:hover, .el_link_white:focus {
   color: white;
-}
-
-table tr:nth-child(2) td {
-  font-size: 30px;
-}
-
-table td {
-  text-align: center;
-  padding: 7px 0;
-  border-right: solid 1px #ddd;
-  border-left: solid 1px #ddd;
-  width: 155px;
-}
-
-table td a {
-  background-color: #25b327;
-  color: white;
-  padding: 5px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-}
-
-table th.popular {
-  position: relative;
-}
-
-table th.popular span.no1 {
-  position: absolute;
-  top: -10px;
-  left: calc(50% - 30px);
-  background: #bdcc28;
-  font-size: 10px;
-  border-radius: 15px;
-  line-height: 1;
-  padding: 5px;
-}
-
-table th.popular span.inner {
-  position: absolute;
-  color: white;
-  background-color: #f34955;
-  left: 0;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  padding: 10px 0;
 }
 
 .bl_article_pfm {
@@ -312,10 +266,5 @@ table th.popular span.inner {
   height: 400px;
   object-fit: cover;
   object-position: top;
-}
-
-.test {
-  width: 200px;
-  z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */
