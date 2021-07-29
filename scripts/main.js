@@ -1,5 +1,3 @@
-
-
 const lyConts = document.querySelectorAll(".ly_cont");
 console.log(lyConts);
 const cb = function (entries, observer) {
@@ -40,29 +38,36 @@ TweenMax.set(".el_arrow", {
 });
 
 const arrowAnimate = () => {
-	TweenMax.to(
-		".el_arrow",
-		0.5,
-		{
-			rotation: '360',
-			opacity: '1'
-		}
-	)
+  TweenMax.to(".el_arrow", 0.5, {
+    rotation: "360",
+    opacity: "1",
+  });
 };
 
 const stagger = () => {
-	TweenMax.staggerTo(
-		".char",
-		0.5,
-		{
-			opacity: "1",
-			x: 0,
-			rotation: 0,
-			// onComplete: arrowAnimate
-		},
-		0.2
-		);
-	}
-	
-	setTimeout(stagger,1000)
-	setTimeout(arrowAnimate,2500)
+  TweenMax.staggerTo(
+    ".char",
+    0.5,
+    {
+      opacity: "1",
+      x: 0,
+      rotation: 0,
+      // onComplete: arrowAnimate
+    },
+    0.2
+  );
+};
+
+TweenMax.set(".textAnimate", {
+  opacity: "0",
+});
+
+const textAnimate = () => {
+	TweenMax.to(".textAnimate", 2, {
+    opacity: "1",
+  });
+};
+
+setTimeout(stagger, 1000);
+setTimeout(arrowAnimate, 2500);
+setTimeout(textAnimate, 3500);

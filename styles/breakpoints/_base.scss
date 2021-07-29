@@ -1,6 +1,6 @@
 //レイアウト確認
 * {
-  outline: dashed 1px skyblue;
+  // outline: dashed 1px skyblue;
 }
 
 body {
@@ -55,36 +55,35 @@ li {
   background: linear-gradient(transparent 60%, lightcyan 0%);
 }
 
-// common-layout
+// common-class
 .ly_cont {
-	margin: 0 auto;
+  margin: 0 auto;
   padding: 100px 250px;
+  color: $--font-cBlack;
 }
-.el_heading {
-  font-size: 48px;
+
+.ly_cont_bgBlue {
+  background-color: $--main-primary;
+  color: #fff;
+}
+
+.ly_intro {
   padding: 20px 10px;
-  // margin-top: 100px;
-  width: 600px;
+	margin-bottom: 100px;
 }
 
-.el_description{
-	color: $--font-cBlack;
-	font-size: 1.25rem;
+.bl_heading {
+  text-align: left;
+  font-size: 3rem;
 }
 
-.el_description__white{
-	color: $--font-cWhite;
+.bl_description {
+  font-size: 1.25rem;
 }
 
-.ly_heading{
-	text-align: left;
-	// margin-bottom: 300px;
-	font-size: 48px;
-  padding: 20px 10px;
-  // margin-top: 100px;
-  width: 600px;
+.bl_description__white {
+  font-size: 1.25rem;
 }
-
 
 // header
 .ly_header {
@@ -141,13 +140,13 @@ li {
 
 // hero >>>
 .ly_cont_hero {
-	width: 80%;
+  width: 80%;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
-	margin-top: 100px;
+  margin-top: 100px;
 }
 
 .bl_hero_heading {
@@ -155,10 +154,10 @@ li {
   line-height: 1;
 }
 
-.char{
-	display: inline-block;
-	margin-right: -50px;
-	transform: translateX(-300px);
+.char {
+  display: inline-block;
+  margin-right: -50px;
+  transform: translateX(-300px);
 }
 
 .bl_hero_subHeading {
@@ -178,13 +177,7 @@ li {
 }
 // <<< hero
 
-
 // services
-
-.ly_cont_bgBlue {
-  background-color: $--main-primary;
-  color: #fff;
-}
 
 .bl_card_wrapper {
   display: flex;
@@ -229,40 +222,39 @@ li {
   margin-bottom: 50px;
 }
 
-
 .el_article_image {
   flex: 1;
-	height: inherit;
-	overflow: hidden;
+  height: inherit;
+  overflow: hidden;
 }
 
 .bl_skills_txtWrapper {
   flex: 2;
 }
 
-.el_link_white{
-color: skyblue;
-&:hover,&:focus{
-	color: white;
-}
+.el_link_white {
+  color: skyblue;
+  &:hover,
+  &:focus {
+    color: white;
+  }
 }
 
 // price
 
-
-
-
 //performance
 
-.bl_article_pfm{
-	width: 100%;
-	font-size: 24px;
-	img{
-		width: 300px;
-		height:400px;
-		object-fit: cover;
-		object-position: top;
+.bl_article_pfm {
+  width: 100%;
+  font-size: 24px;
+  img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
 }
-}
+
+//about
 
 // footer

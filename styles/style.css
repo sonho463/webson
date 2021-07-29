@@ -19,10 +19,6 @@
   }
 }
 
-* {
-  outline: dashed 1px skyblue;
-}
-
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
   max-width: 1600px;
@@ -79,28 +75,30 @@ li {
 .ly_cont {
   margin: 0 auto;
   padding: 100px 250px;
-}
-
-.el_heading {
-  font-size: 48px;
-  padding: 20px 10px;
-  width: 600px;
-}
-
-.el_description {
   color: #333;
-  font-size: 1.25rem;
 }
 
-.el_description__white {
+.ly_cont_bgBlue {
+  background-color: #1b2f60;
   color: #fff;
 }
 
-.ly_heading {
-  text-align: left;
-  font-size: 48px;
+.ly_intro {
   padding: 20px 10px;
-  width: 600px;
+  margin-bottom: 100px;
+}
+
+.bl_heading {
+  text-align: left;
+  font-size: 3rem;
+}
+
+.bl_description {
+  font-size: 1.25rem;
+}
+
+.bl_description__white {
+  font-size: 1.25rem;
 }
 
 .ly_header {
@@ -191,11 +189,6 @@ li {
   position: absolute;
   right: 100px;
   z-index: -1;
-}
-
-.ly_cont_bgBlue {
-  background-color: #1b2f60;
-  color: #fff;
 }
 
 .bl_card_wrapper {
