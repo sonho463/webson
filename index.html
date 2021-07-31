@@ -5,9 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.typekit.net/wpn4iwl.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;400;900&display=swap"
 		rel="stylesheet">
 
@@ -19,12 +24,12 @@
 <body>
 	<header class="ly_header">
 		<section class="ly_header_inner">
-			<figure class="el_headerLogo hl_shadow">
+			<figure class="el_headerLogo hp_shadow headerAnimate">
 				<img src="./images/WEBSON.png" alt="">
 			</figure>
 			<nav>
-				<ul class="bl_headerNav hl_shadow">
-					<li class="bl_headerNav_item">
+				<ul class="ly_headerNav bl_headerNav hp_shadow" id="header-nav">
+					<li class="l_headerNav_item">
 						<a class="bl_headerNav_link" href="#">
 							ホーム
 						</a>
@@ -61,10 +66,16 @@
 					</li><!-- /.bl_headerNav_item -->
 				</ul><!-- /.bl_headerNav -->
 			</nav>
+			<div id="hamburger" class="hamburger">
+				<span class="inner_line"></span><!-- /.inner_line -->
+				<span class="inner_line"></span><!-- /.inner_line -->
+				<span class="inner_line"></span><!-- /.inner_line -->
+			</div><!-- /.hamburger -->
 		</section><!-- /.ly_header_inner -->
 	</header>
 	<main>
-		<section class="ly_cont ly_cont_hero">
+		<!-- hero-header -->
+		<section id="hero" class="ly_cont ly_cont_hero">
 			<div class="ly_hero_heading">
 				<p class="bl_hero_subHeading textAnimate">ウェブサイト制作・開発</p>
 				<h1 class="bl_hero_heading">
@@ -88,7 +99,7 @@
 			</figure><!-- /.el_arrow_wrapper -->
 		</section>
 
-		<!-- servicesBlock -->
+		<!-- services -->
 
 		<section id="services" class="ly_cont ly_cont_bgBlue">
 			<div class="ly_intro">
@@ -97,12 +108,9 @@
 						サービス内容
 					</h2>
 				</div>
-				<div class="bl_descripton__white">
+				<div class="bl_description__white">
 					<p>
 						なんのためにウェブサイトをつくるのでしょうか。作りたいと思う人それぞれに、目的があるはずです。目的に応じた、ホームページ制作、運用、施策を提案します。
-					</p>
-					<p>
-						WEBSONでは、効率的、効果的に会議を進める技術であるホワイトボード・ミーティング®認定講師資格を持ったそんほんすが、お客様の状況をしっかりと効率よくききとります。（ホワイトボードがなくても大丈夫）
 					</p>
 					<p>
 						Web技術に明るくなくても大丈夫です。教員経験のあるそんほんすは、あなたの意識にあるキーワードから、適切に課題を導き出し、対応策をわかりやすくご説明いたします。
@@ -116,6 +124,7 @@
 					<figure class="card_image">
 						<img src="./images/computer.png" alt="">
 					</figure><!-- /.card_image -->
+
 				</div>
 				<div class="card">
 					<h3>SEO対策、SNS運用代行、コンサルティング</h3>
@@ -141,6 +150,7 @@
 						以下に料金表を示します。基本的な総額を表示しています。
 						サブスクリプションによる契約など、お客様の状況に応じた契約が可能ですので、
 						お気軽にご相談ください。
+
 					</p>
 				</div><!-- /.bl_description -->
 			</div>
@@ -271,11 +281,25 @@
 
 			</div>
 
+
 			<ul>
 				<li class="bl_article bl_article_pfm">
-					<figure class="el_article_image">
-						<img src="./images/performance/01-techmeets.jpg" alt="">
-					</figure><!-- /.article_image -->
+					<div class="performance_imgWrapper hp_shadow">
+						<figure class="el_article_image">
+							<img src="./images/performance/01-techmeets.jpg" alt="">
+						</figure><!-- /.article_image -->
+						<ul class="performance_link_wrapper">
+							<li><a href="">
+								<i class="fab fa-github"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-external-link-alt"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-image"></i>
+							</a></li>
+						</ul><!-- /.performance__link -->
+					</div><!-- /.performance_imgWrapper -->
 
 					<div class="bl_skills_txtWrapper">
 						<h3 class="el_skills_itemHeading">
@@ -289,9 +313,84 @@
 
 				</li><!-- /.el_skills_item -->
 				<li class="bl_article bl_article_pfm">
-					<figure class="el_article_image">
-						<a href="https://horumont.info"><img src="./images/performance/02-takamina-link.jpg" alt=""></a>
-					</figure><!-- /.article_image -->
+
+					<div class="performance_imgWrapper hp_shadow">
+						<figure class="el_article_image">
+							<a href="https://horumont.info"><img src="./images/performance/02-takamina-link.jpg" alt=""></a>
+						</figure><!-- /.article_image -->
+						<ul class="performance_link_wrapper">
+							<li><a href="">
+								<i class="fab fa-github"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-external-link-alt"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-image"></i>
+							</a></li>
+						</ul><!-- /.performance__link -->
+					</div>
+
+					<div class="bl_skills_txtWrapper">
+						<h3 class="el_skills_itemHeading">
+							GatsbyJS
+						</h3><!-- /.el_skills_itemHeading -->
+						<p class="el_skills_item_txt">
+							JAMstackという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
+						</p><!-- /.el_skills_item_txt -->
+
+					</div>
+					<!--/bl_skills_txtWrapper -->
+
+				</li><!-- /.el_skills_item -->
+				<li class="bl_article bl_article_pfm">
+					<div class="performance">
+							<div class="performance_imgWrapper hp_shadow">
+							<figure class="el_article_image">
+								<a href="https://horumont.info"><img src="./images/performance/03-takamina-link3.jpg" alt=""></a>
+							</figure><!-- /.article_image -->
+							<ul class="performance_link_wrapper">
+								<li><a href="">
+									<i class="fab fa-github"></i>
+								</a></li>
+								<li><a href="">
+									<i class="fas fa-external-link-alt"></i>
+								</a></li>
+								<li><a href="">
+									<i class="fas fa-image"></i>
+								</a></li>
+							</ul><!-- /.performance__link -->
+						</div><!-- /.performance -->
+					</div><!-- /.performance_imgWrapper -->
+
+					<div class="bl_skills_txtWrapper">
+						<h3 class="el_skills_itemHeading">
+							GatsbyJS
+						</h3><!-- /.el_skills_itemHeading -->
+						<p class="el_skills_item_txt">
+							JAMという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
+						</p><!-- /.el_skills_item_txt -->
+					</div>
+					<!--/bl_skills_txtWrapper -->
+
+				</li><!-- /.el_skills_item -->
+				<li class="bl_article bl_article_pfm">
+					<div class="performance_imgWrapper hp_shadow">
+						<figure class="el_article_image">
+							<a href="https://horumont.info"><img src="./images/performance/04-bochi.jpg" alt=""></a>
+						</figure><!-- /.article_image -->
+						<ul class="performance_link_wrapper">
+							<li><a href="">
+								<i class="fab fa-github"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-external-link-alt"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-image"></i>
+							</a></li>
+						</ul><!-- /.performance__link -->
+					</div><!-- /.performance_imgWrapper -->
 
 					<div class="bl_skills_txtWrapper">
 						<h3 class="el_skills_itemHeading">
@@ -304,42 +403,24 @@
 					<!--/bl_skills_txtWrapper -->
 
 				</li><!-- /.el_skills_item -->
-				<li class="bl_article bl_article_pfm">
-					<figure class="el_article_image">
-						<a href="https://horumont.info"><img src="./images/performance/03-takamina-link3.jpg" alt=""></a>
-					</figure><!-- /.article_image -->
-
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							GatsbyJS
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							JAMstackという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
-
-				</li><!-- /.el_skills_item -->
-				<li class="bl_article bl_article_pfm">
-					<figure class="el_article_image">
-						<a href="https://horumont.info"><img src="./images/performance/04-bochi.jpg" alt=""></a>
-					</figure><!-- /.article_image -->
-
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							GatsbyJS
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							JAMstackという技術を使ったサイトを構築します。WordPress同様、ブログのようにコンテンツを更新できるサイトの制作もできます。サイトの表示がとても早いので、ユーザーの離脱率が下がったり、検索順位でも有利になったりします。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
-
-				</li><!-- /.el_skills_item -->
-				<li class="bl_article bl_article_pfm">
-					<figure class="el_article_image">
-						<a href="https://horumont.info"><img src="./images/performance/05-ytu.jpg" alt=""></a>
-					</figure><!-- /.article_image -->
+				<li class="bl_article bl_article_pfm"
+				>
+					<div class="performance_imgWrapper hp_shadow">
+						<figure class="el_article_image">
+							<a href="https://horumont.info"><img src="./images/performance/05-ytu.jpg" alt=""></a>
+						</figure><!-- /.article_image -->
+						<ul class="performance_link_wrapper">
+							<li><a href="">
+								<i class="fab fa-github"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-external-link-alt"></i>
+							</a></li>
+							<li><a href="">
+								<i class="fas fa-image"></i>
+							</a></li>
+						</ul><!-- /.performance__link -->
+					</div><!-- /.performance_imgWrapper -->
 
 					<div class="bl_skills_txtWrapper">
 						<h3 class="el_skills_itemHeading">
@@ -376,6 +457,7 @@
 				<div class="bl_description__white">
 					<p>
 						２０１９年春頃から本格的にプログラミングやウェブ制作の学習にとりくみはじめました。教員経験を通して培ってきたコミュニケーション力や課題解決力をウェブ制作事業によって社会に還元したいという思いが募り、現在副業でウェブ制作・開発にとりくんでいます。
+
 					</p><!-- /.description -->
 					<a class="el_link_white" href="#">もっと読む >>></a>
 				</div><!-- /.bl_description -->

@@ -85,7 +85,7 @@ li {
 
 .ly_intro {
   padding: 20px 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .bl_heading {
@@ -94,11 +94,11 @@ li {
 }
 
 .bl_description {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 .bl_description__white {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 .ly_header {
@@ -119,17 +119,20 @@ li {
   width: 80px;
 }
 
-.bl_headerNav {
+.ly_headerNav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 0;
+}
+
+.bl_headerNav {
   gap: 20px;
   background-color: #f0f8ff;
   border-radius: 20px;
 }
 
-.hl_shadow {
+.hp_shadow {
   box-shadow: 3px 3px 5px #b0c4de, 0px 3px 5px #b0c4de;
 }
 
@@ -154,6 +157,37 @@ li {
   transition: 0.7s;
 }
 
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background-color: #1b2f60;
+  border-radius: 50%;
+}
+
+.hamburger .inner_line {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 7px;
+}
+
+.hamburger .inner_line:first-child {
+  margin-top: 3px;
+}
+
+.hamburger .inner_line:nth-child(2) {
+  width: 80%;
+}
+
+.hamburger .inner_line:last-child {
+  width: 60%;
+}
+
 .ly_cont_hero {
   width: 80%;
   height: 700px;
@@ -161,7 +195,6 @@ li {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  margin-top: 100px;
 }
 
 .bl_hero_heading {
@@ -171,7 +204,7 @@ li {
 
 .char {
   display: inline-block;
-  margin-right: -50px;
+  margin-right: -65px;
   transform: translateX(-300px);
 }
 
@@ -199,6 +232,10 @@ li {
 
 .card {
   margin-top: 50px;
+}
+
+.card h3 {
+  font-size: 2rem;
 }
 
 .card_image {
@@ -259,5 +296,22 @@ li {
   height: 400px;
   object-fit: cover;
   object-position: top;
+}
+
+.performance_imgWrapper {
+  position: relative;
+  margin-right: 20px;
+}
+
+.performance_link_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  gap: 10px;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=style.css.map */

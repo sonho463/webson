@@ -69,7 +69,7 @@ li {
 
 .ly_intro {
   padding: 20px 10px;
-	margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .bl_heading {
@@ -78,11 +78,11 @@ li {
 }
 
 .bl_description {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 .bl_description__white {
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 // header
@@ -104,17 +104,32 @@ li {
   width: 80px;
 }
 
+.ly_headerNav{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0;
+
+}
+
 .bl_headerNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0;
   gap: 20px;
   background-color: $--main-secondary;
   border-radius: 20px;
+  // visibility:hidden;
+  // width: 0;
+  // position: absolute;
+  // top: 300px;
 }
+// .open{
+// 	top: 50px !important;
+// 	right: 50px !important;
+// 	visibility: visible;
+// 	transition: 3s;
+// 	width: fit-content;
+// }
 
-.hl_shadow {
+.hp_shadow {
   box-shadow: 3px 3px 5px $--shadow-cBlue, 0px 3px 5px $--shadow-cBlue;
 }
 
@@ -138,6 +153,35 @@ li {
   }
 }
 
+// hamburger
+
+.hamburger {
+  display: block;
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  background-color: $--main-primary;
+  border-radius: 50%;
+  .inner_line {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 7px;
+    &:first-child {
+      margin-top: 3px;
+    }
+    &:nth-child(2) {
+      width: 80%;
+    }
+    &:last-child {
+      width: 60%;
+    }
+  }
+}
+
 // hero >>>
 .ly_cont_hero {
   width: 80%;
@@ -146,7 +190,7 @@ li {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  margin-top: 100px;
+  // margin-top: 100px;
 }
 
 .bl_hero_heading {
@@ -156,7 +200,7 @@ li {
 
 .char {
   display: inline-block;
-  margin-right: -50px;
+  margin-right: -65px;
   transform: translateX(-300px);
 }
 
@@ -187,6 +231,9 @@ li {
 
 .card {
   margin-top: 50px;
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 .card_image {
@@ -253,6 +300,23 @@ li {
     object-fit: cover;
     object-position: top;
   }
+}
+
+.performance_imgWrapper {
+  position: relative;
+  margin-right: 20px;
+}
+
+.performance_link_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  gap: 10px;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 //about
