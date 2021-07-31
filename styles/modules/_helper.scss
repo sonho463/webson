@@ -1,0 +1,31 @@
+
+// マージン・パディング
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+.mb-md {
+  margin-bottom: 56px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+// emシリーズ
+
+.yellow-line {
+  background: linear-gradient(transparent 60%, gold 0%);
+}
+
+.blue-line {
+  background: linear-gradient(transparent 60%, lightcyan 0%);
+}
+
+.hp_shadow {
+  box-shadow: 3px 3px 5px $--shadow-cBlue, 0px 3px 5px $--shadow-cBlue;
+}

@@ -20,22 +20,13 @@ img {
   vertical-align: bottom;
 }
 
-// マージン・パディング
-.mb-sm {
-  margin-bottom: 16px !important;
+
+a:focus,
+a:hover {
+  color: yellow;
+  text-decoration: underline;
 }
-.mb-md {
-  margin-bottom: 56px !important;
-}
-.mb-lg {
-  margin-bottom: 80px !important;
-}
-.pb-sm {
-  padding-bottom: 16px !important;
-}
-.pb-lg {
-  padding-bottom: 80px !important;
-}
+
 
 // 箇条書きスタイル消す
 ul {
@@ -45,15 +36,7 @@ li {
   list-style: none;
 }
 
-// emシリーズ
 
-.yellow-line {
-  background: linear-gradient(transparent 60%, gold 0%);
-}
-
-.blue-line {
-  background: linear-gradient(transparent 60%, lightcyan 0%);
-}
 
 // common-class
 .ly_cont {
@@ -129,9 +112,7 @@ li {
 // 	width: fit-content;
 // }
 
-.hp_shadow {
-  box-shadow: 3px 3px 5px $--shadow-cBlue, 0px 3px 5px $--shadow-cBlue;
-}
+
 
 .bl_headerNav_item {
   width: fit-content;
@@ -224,22 +205,18 @@ li {
 // services
 
 .bl_card_wrapper {
-  display: flex;
-  justify-content: space-around;
-  gap: 50px;
 }
 
-.card {
+.bl_card {
+	display: flex;
+	// justify-content: flex-start;
+	gap: 50px;
   margin-top: 50px;
   h3 {
     font-size: 2rem;
   }
 }
 
-.card_image {
-  width: 300px;
-  margin: 0 auto;
-}
 
 // price
 
@@ -289,7 +266,7 @@ li {
 
 // price
 
-//performance
+//works
 
 .bl_article_pfm {
   width: 100%;
@@ -302,12 +279,12 @@ li {
   }
 }
 
-.performance_imgWrapper {
+.works_imgWrapper {
   position: relative;
   margin-right: 20px;
 }
 
-.performance_link_wrapper {
+.works_link_wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -320,5 +297,10 @@ li {
 }
 
 //about
+
+.bl_card_image_about{
+	width: 800px;
+	clip-path: circle();
+}
 
 // footer
