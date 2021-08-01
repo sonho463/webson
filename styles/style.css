@@ -334,6 +334,10 @@ li {
 }
 
 .bl_work_wrapper {
+  display: flex;
+}
+
+.bl_work_inner {
   width: 30%;
   height: 300px;
   overflow: hidden;
@@ -341,10 +345,6 @@ li {
   display: flex;
   flex-direction: column-reverse;
   gap: 5px;
-}
-
-.bl_work {
-  background-color: pink;
 }
 
 .bl_work_title {
@@ -356,7 +356,7 @@ li {
   overflow: hidden;
 }
 
-.modal {
+.hidden {
   display: none;
 }
 

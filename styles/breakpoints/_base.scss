@@ -318,6 +318,10 @@ li {
 
 // modalTest
 .bl_work_wrapper{
+	display: flex;
+}
+
+.bl_work_inner{
 	width:30%;
 	height: 300px;
 	overflow: hidden;
@@ -328,9 +332,8 @@ li {
 }
 
 .bl_work{
-	background-color: pink;
+	// background-color: pink;
 }
-
 
 
 .bl_work_title{
@@ -342,10 +345,7 @@ li {
 overflow: hidden;
 }
 
-
-
-
-.modal{
+.hidden{
 	display: none;
 }
 
