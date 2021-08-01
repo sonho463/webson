@@ -1,10 +1,11 @@
 //レイアウト確認
 * {
-  // outline: dashed 1px skyblue;
+  outline: dashed 1px skyblue;
 }
 
 body {
-  font-family: "Roboto", "Noto Sans JP", sans-serif;
+
+  font-family: sawarabi-mincho,"Roboto", "Noto Sans JP", sans-serif;
   max-width: 1600px;
   text-align: justify;
   background-color: $--main-secondary;
@@ -20,13 +21,11 @@ img {
   vertical-align: bottom;
 }
 
-
 a:focus,
 a:hover {
   color: yellow;
   text-decoration: underline;
 }
-
 
 // 箇条書きスタイル消す
 ul {
@@ -35,8 +34,6 @@ ul {
 li {
   list-style: none;
 }
-
-
 
 // common-class
 .ly_cont {
@@ -61,14 +58,17 @@ li {
 }
 
 .bl_description {
-	font-family: sawarabi-mincho, sans-serif;
-font-style: normal;
-font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
   font-size: 1.75rem;
 }
 
 .bl_description__white {
   font-size: 1.75rem;
+}
+
+.bl_heading{
+	font-family: "Roboto";
 }
 
 // header
@@ -90,13 +90,14 @@ font-weight: 500;
   width: 80px;
 }
 
-.ly_headerNav{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin: 0;
-
+.ly_headerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
 }
+
+
 
 .bl_headerNav {
   gap: 20px;
@@ -114,8 +115,6 @@ font-weight: 500;
 // 	transition: 3s;
 // 	width: fit-content;
 // }
-
-
 
 .bl_headerNav_item {
   width: fit-content;
@@ -141,9 +140,9 @@ font-weight: 500;
 
 .hamburger {
   display: block;
-  position: absolute;
-  top: 300px;
-  right: 50px;
+  // position: absolute;
+  // top: 300px;
+  // right: 50px;
   width: 60px;
   height: 60px;
   padding: 15px;
@@ -178,6 +177,7 @@ font-weight: 500;
 }
 
 .bl_hero_heading {
+	font-family: "Roboto";
   font-size: 220px;
   line-height: 1;
 }
@@ -211,15 +211,22 @@ font-weight: 500;
 }
 
 .bl_card {
-	display: flex;
-	// justify-content: flex-start;
-	gap: 50px;
+  display: flex;
+  // justify-content: flex-start;
+  gap: 50px;
   margin-top: 50px;
   h3 {
     font-size: 2rem;
   }
 }
 
+.bl_card_image{
+	width: 25%;
+}
+
+.bl_card_textWrapper{
+	width:75%;
+}
 
 // price
 
@@ -301,9 +308,47 @@ font-weight: 500;
 
 //about
 
-.bl_card_image_about{
-	width: 800px;
-	clip-path: circle();
+.bl_card_image_about {
+  width: 800px;
+  clip-path: circle();
 }
 
 // footer
+
+
+// modalTest
+.bl_work_wrapper{
+	width:30%;
+	height: 300px;
+	overflow: hidden;
+	padding: 30px;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 5px;
+}
+
+.bl_work{
+	background-color: pink;
+}
+
+
+
+.bl_work_title{
+	font-size: 1.5rem;
+	z-index: 100;
+}
+
+.bl_work_img {
+overflow: hidden;
+}
+
+
+
+
+.modal{
+	display: none;
+}
+
+.open {
+	display: block;
+}

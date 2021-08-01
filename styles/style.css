@@ -51,8 +51,12 @@
   box-shadow: 3px 3px 5px #b0c4de, 0px 3px 5px #b0c4de;
 }
 
+* {
+  outline: dashed 1px skyblue;
+}
+
 body {
-  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  font-family: sawarabi-mincho,"Roboto", "Noto Sans JP", sans-serif;
   max-width: 1600px;
   text-align: justify;
   background-color: #f0f8ff;
@@ -104,7 +108,6 @@ li {
 }
 
 .bl_description {
-  font-family: sawarabi-mincho, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.75rem;
@@ -112,6 +115,10 @@ li {
 
 .bl_description__white {
   font-size: 1.75rem;
+}
+
+.bl_heading {
+  font-family: "Roboto";
 }
 
 .ly_header {
@@ -168,9 +175,6 @@ li {
 
 .hamburger {
   display: block;
-  position: absolute;
-  top: 300px;
-  right: 50px;
   width: 60px;
   height: 60px;
   padding: 15px;
@@ -207,6 +211,7 @@ li {
 }
 
 .bl_hero_heading {
+  font-family: "Roboto";
   font-size: 220px;
   line-height: 1;
 }
@@ -241,6 +246,14 @@ li {
 
 .bl_card h3 {
   font-size: 2rem;
+}
+
+.bl_card_image {
+  width: 25%;
+}
+
+.bl_card_textWrapper {
+  width: 75%;
 }
 
 .el_heading_wrapper {
@@ -318,5 +331,36 @@ li {
 .bl_card_image_about {
   width: 800px;
   clip-path: circle();
+}
+
+.bl_work_wrapper {
+  width: 30%;
+  height: 300px;
+  overflow: hidden;
+  padding: 30px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+
+.bl_work {
+  background-color: pink;
+}
+
+.bl_work_title {
+  font-size: 1.5rem;
+  z-index: 100;
+}
+
+.bl_work_img {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

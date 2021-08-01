@@ -19,13 +19,13 @@
 	<link rel="stylesheet" href="./styles/vendors/bootstrap-reboot.css">
 	<link rel="stylesheet" href="./styles/style.css">
 	<script>
-		(function(d) {
+		(function (d) {
 			var config = {
 				kitId: 'dug4prd',
 				scriptTimeout: 3000,
 				async: true
 			},
-			h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+				h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
 		})(document);
 	</script>
 	<title>WEBSON | 大阪のウェブ制作フリーランス</title>
@@ -133,24 +133,32 @@
 					<figure class="bl_card_image">
 						<img src="./images/seo.png" alt="">
 					</figure><!-- /.bl_card_image -->
-					<bl_card_textWrapper>
-						<h3>SEO対策、SNS運用代行、コンサルティング</h3>
+					<div class="bl_card_textWrapper">
+						<h3>ホームページ制作、改修、保守運用</h3>
 						<div class="bl_card_description">
-							<p>集客のお手伝いをいたします。サイトとの連動など総合的に状況を判断して、効果的な施策を提案、代行等いたします。代表のそんほんすが対応するので、フットワーク軽く様々なご相談をお受けいたします。</p>
+							<p>お客様のビジネスの状況をききとり、ホームページ制作、改修、保守運用など行います。ホームページを開設するための方法もいろいろあります。それぞれのやり方のメリット、デメリットを考慮に入れて、提案をいたします。
+							</p>
+							<p>
+								【ホームページ制作】　15万円〜<br>
+								【保守運用】　１５０００円／月
+
+
+							</p>
 						</div><!-- /.bl_card_description -->
-					</bl_card_textWrapper>
+					</div>
 				</div>
 				<div class="bl_card">
 					<figure class="bl_card_image">
 						<img src="./images/computer.png" alt="">
 					</figure><!-- /.bl_card_image -->
-					<bl_card_textWrapper>
+					<div class="bl_card_textWrapper">
 						<h3>SEO対策、SNS運用代行、コンサルティング</h3>
 						<div class="bl_card_description">
 							<p>集客のお手伝いをいたします。サイトとの連動など総合的に状況を判断して、効果的な施策を提案、代行等いたします。代表のそんほんすが対応するので、フットワーク軽く様々なご相談をお受けいたします。</p>
 						</div><!-- /.bl_card_description -->
-					</bl_card_textWrapper>
+					</div>
 				</div>
+			</div>
 
 
 
@@ -311,41 +319,42 @@
 
 			</div>
 
-
 			<ul>
-				<li class="bl_article bl_article_pfm">
-					<div class="works_imgWrapper hp_shadow">
-						<figure class="el_article_image">
-							<img src="./images/works/01-techmeets.jpg" alt="">
-						</figure><!-- /.article_image -->
-						<ul class="works_link_wrapper">
-							<li><a href="">
+				<li class="bl_work_wrapper bl_work hp_shadow">
+					<div class="bl_work_info">
+						<div class="bl_work_title">
+							TECHMEETS
+						</div><!-- /.bl_work_title -->
+						<p class="bl_work_desc modal">
+							TECHMEETSさんにいただいた画像カンプからコーディングしました。レスポンシブにも対応しています。
+						</p><!-- /.bl_work_desc -->
+						<ul class="bl_work_linkWrapper modal">
+							<li class="el_work_linkItem">
+								<a href="">
 									<i class="fab fa-github"></i>
-								</a></li>
-							<li><a href="">
+								</a>
+							</li><!-- /.el_work_linkItem -->
+							<li class="el_work_linkItem">
+								<a href="">
 									<i class="fas fa-external-link-alt"></i>
-								</a></li>
-							<li><a href="">
+								</a>
+							</li><!-- /.el_work_linkItem -->
+							<li class="el_work_linkItem">
+								<a href="">
 									<i class="fas fa-image"></i>
-								</a></li>
-						</ul><!-- /.works__link -->
-					</div><!-- /.works_imgWrapper -->
+								</a>
+							</li><!-- /.el_work_linkItem -->
+						</ul><!-- /.bl_work_linkWrapper -->
+					</div><!-- /.bl_work_info -->
 
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							TECHMEETSさん提供のデザインカンプ
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							TECHMEETSさんが提供してくれたカンプをコーディング。レスポンシブ対応。基本的にはBEMを意識してクラス名をつけました。
+						<figure class="bl_work_img">
+							<img src="./images/works/01-techmeets.jpg" alt="">
+						</figure><!-- /.bl_work_img -->
 
-						</p><!-- /.el_skills_item_txt -->
 
-					</div>
-					<!--/bl_skills_txtWrapper -->
+				</li>
 
-				</li><!-- /.el_skills_item -->
 				<li class="bl_article bl_article_pfm">
-
 					<div class="works_imgWrapper hp_shadow">
 						<figure class="el_article_image">
 							<a href="https://horumont.info"><img src="./images/works/02-takamina-link.jpg" alt=""></a>
@@ -362,7 +371,6 @@
 								</a></li>
 						</ul><!-- /.works__link -->
 					</div>
-
 					<div class="bl_skills_txtWrapper">
 						<h3 class="el_skills_itemHeading">
 							パソコンの勉強に使えるリンク集
@@ -370,12 +378,10 @@
 						<p class="el_skills_item_txt">
 							学校で、プログラミング教育が導入されるということで、苦手な先生のクラスでも、プログラミングのサイトにアクセスできるようにしたいという課題がありました。所属しているコミュニティ内の勉強会で作ったものです。
 						</p><!-- /.el_skills_item_txt -->
-
-
 					</div>
 					<!--/bl_skills_txtWrapper -->
-
 				</li><!-- /.el_skills_item -->
+
 				<li class="bl_article bl_article_pfm">
 					<div class="works">
 						<div class="works_imgWrapper hp_shadow">
@@ -504,23 +510,23 @@
 		<section class="ly_cont ly_cont_bgBlue">
 			<div class="ly_intro">
 
-					<div class="bl_card">
+				<div class="bl_card">
 
-						<bl_card_textWrapper>
-							<h3>私について</h3>
-							<div class="bl_card_description">
-								<p>
-									２０１９年春頃から本格的にプログラミングやウェブ制作の学習にとりくみはじめました。教員経験を通して培ってきたコミュニケーション力や課題解決力をウェブ制作事業によって社会に還元したいという思いが募り、現在副業でウェブ制作・開発にとりくんでいます。
+					<bl_card_textWrapper>
+						<h3>私について</h3>
+						<div class="bl_card_description">
+							<p>
+								２０１９年春頃から本格的にプログラミングやウェブ制作の学習にとりくみはじめました。教員経験を通して培ってきたコミュニケーション力や課題解決力をウェブ制作事業によって社会に還元したいという思いが募り、現在副業でウェブ制作・開発にとりくんでいます。
 
-								</p><!-- /.description -->
-								<a class="el_link_white" href="#">もっと読む >>></a>
-							</div><!-- /.bl_card_description -->
-						</bl_card_textWrapper>
-						<figure class="bl_card_image bl_card_image_about">
-							<img src="./images/icon.png" alt="">
+							</p><!-- /.description -->
+							<a class="el_link_white" href="#">もっと読む >>></a>
+						</div><!-- /.bl_card_description -->
+					</bl_card_textWrapper>
+					<figure class="bl_card_image bl_card_image_about">
+						<img src="./images/icon.png" alt="">
 
-						</figure><!-- /.bl_card_image -->
-					</div>
+					</figure><!-- /.bl_card_image -->
+				</div>
 
 
 
