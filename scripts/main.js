@@ -106,8 +106,8 @@ const getHoverItem = () => {
 
 const modalActive = (work) => {
 	overLay.classList.remove('hidden');
-	// techmeets.classList.add('modal');
-	work.classList.add('modal');
+	techmeets.classList.add('modal');
+	// work.classList.add('modal');
 }
 
 const modalClose = () => {
