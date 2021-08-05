@@ -90,3 +90,31 @@ setTimeout(stagger, 1000);
 setTimeout(arrowAnimate, 2500);
 setTimeout(textAnimate, 3500);
 setTimeout(hamburgerAnimate, 3500);
+
+
+//　実績ブロックのモーダルウィンドウの動作
+
+const techmeets = document.querySelector('#techmeets');
+const overLay = document.querySelector('#over-lay');
+
+const getHoverItem = () => {
+	window.onmousemove = function(){
+		var ele = document.querySelector(":hover");
+		}
+		return ele.id;
+}
+
+const modalActive = (work) => {
+	overLay.classList.remove('hidden');
+	// techmeets.classList.add('modal');
+	work.classList.add('modal');
+}
+
+const modalClose = () => {
+	overLay.classList.add('hidden');
+	techmeets.classList.remove('modal');
+}
+
+techmeets.addEventListener('click', modalActive);
+
+overLay.addEventListener('click', modalClose)

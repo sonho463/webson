@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
 	<header class="ly_header">
 		<section class="ly_header_inner">
 			<figure class="el_headerLogo hp_shadow headerAnimate">
@@ -83,6 +84,7 @@
 			</div><!-- /.hamburger -->
 		</section><!-- /.ly_header_inner -->
 	</header>
+
 	<main>
 		<!-- hero-header -->
 		<section id="hero" class="ly_cont ly_cont_hero">
@@ -126,6 +128,7 @@
 						Web技術に明るくなくても大丈夫です。教員経験のあるそんほんすは、あなたの意識にあるキーワードから、適切に課題を導き出し、対応策をわかりやすくご説明いたします。
 				</div><!-- /.bl-description -->
 			</div>
+
 
 			<div class="bl_card_wrapper">
 
@@ -316,16 +319,19 @@
 						これまでの制作実績を掲載しています。案件として受けたものでも、公開ができないものもありますので、気になる方はお問い合わせください。
 					</p>
 				</div><!-- /.bl_description -->
-
 			</div>
 
-			<ul class="bl_work_wrapper">
-				<li class="bl_work_inner bl_work hp_shadow modal">
-					<div class="bl_work_info modal">
+			<div id="over-lay" class="over-lay hidden">
+			</div><!-- /.over-lay -->
+
+			<ul id="work-list" class="bl_work_wrapper">
+
+				<li id="techmeets" class="bl_work_inner bl_work hp_shadow">
+					<div class="bl_work_info">
 						<div class="bl_work_title">
 							TECHMEETS
 						</div><!-- /.bl_work_title -->
-						<div class="bl_work_desc_wrapper modal hidden">
+						<div class="bl_work_desc_wrapper hidden">
 							<p class="bl_work_desc">
 								TECHMEETSさんにいただいた画像カンプからコーディングしました。レスポンシブにも対応しています。
 							</p><!-- /.bl_work_desc -->
@@ -347,18 +353,18 @@
 								</li><!-- /.el_work_linkItem -->
 							</ul><!-- /.bl_work_linkWrapper -->
 						</div><!-- /.bl_work_info -->
-					</div><!-- /.modal-only -->
-
+					</div><!-- /.-only -->
 					<figure class="bl_work_img">
 						<img src="./images/works/01-techmeets.jpg" alt="">
 					</figure><!-- /.bl_work_img -->
 				</li>
-				<li class="bl_work_wrapper bl_work hp_shadow modal">
-					<div class="bl_work_info modal">
+
+				<li id="study-link01" class="bl_work_inner bl_work hp_shadow ">
+					<div class="bl_work_info ">
 						<div class="bl_work_title">
-							TECHMEETS
+							学習に使えるリンク集
 						</div><!-- /.bl_work_title -->
-						<div class="bl_work_desc_wrapper modal hidden">
+						<div class="bl_work_desc_wrapper  hidden">
 							<p class="bl_work_desc">
 								TECHMEETSさんにいただいた画像カンプからコーディングしました。レスポンシブにも対応しています。
 							</p><!-- /.bl_work_desc -->
@@ -380,159 +386,111 @@
 								</li><!-- /.el_work_linkItem -->
 							</ul><!-- /.bl_work_linkWrapper -->
 						</div><!-- /.bl_work_info -->
-					</div><!-- /.modal-only -->
-
-					<figure class="bl_work_img">
-						<img src="./images/works/01-techmeets.jpg" alt="">
+					</div><!-- /.-only -->
+					<figure class="bl_work_img ">
+						<img src="./images/works/02-takamina-link.jpg" alt="">
 					</figure><!-- /.bl_work_img -->
 				</li>
 
-				<li class="bl_article bl_article_pfm">
-					<div class="works_imgWrapper hp_shadow">
-						<figure class="el_article_image">
-							<a href="https://horumont.info"><img src="./images/works/02-takamina-link.jpg" alt=""></a>
-						</figure><!-- /.article_image -->
-						<ul class="works_link_wrapper">
-							<li><a href="">
-									<i class="fab fa-github"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-external-link-alt"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-image"></i>
-								</a></li>
-						</ul><!-- /.works__link -->
-					</div>
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							パソコンの勉強に使えるリンク集
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							学校で、プログラミング教育が導入されるということで、苦手な先生のクラスでも、プログラミングのサイトにアクセスできるようにしたいという課題がありました。所属しているコミュニティ内の勉強会で作ったものです。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
-				</li><!-- /.el_skills_item -->
-
-				<li class="bl_article bl_article_pfm">
-					<div class="works">
-						<div class="works_imgWrapper hp_shadow">
-							<figure class="el_article_image">
-								<a href="https://horumont.info"><img src="./images/works/03-takamina-link3.jpg" alt=""></a>
-							</figure><!-- /.article_image -->
-							<ul class="works_link_wrapper">
-								<li><a href="">
+				<li id="study-link02" class="bl_work_inner bl_work hp_shadow ">
+					<div class="bl_work_info ">
+						<div class="bl_work_title">
+							学習につかえるリンク集２
+						</div><!-- /.bl_work_title -->
+						<div class="bl_work_desc_wrapper  hidden">
+							<p class="bl_work_desc">
+								TECHMEETSさんにいただいた画像カンプからコーディングしました。レスポンシブにも対応しています。
+							</p><!-- /.bl_work_desc -->
+							<ul class="bl_work_linkWrapper">
+								<li class="el_work_linkItem">
+									<a href="">
 										<i class="fab fa-github"></i>
-									</a></li>
-								<li><a href="">
+									</a>
+								</li><!-- /.el_work_linkItem -->
+								<li class="el_work_linkItem">
+									<a href="">
 										<i class="fas fa-external-link-alt"></i>
-									</a></li>
-								<li><a href="">
+									</a>
+								</li><!-- /.el_work_linkItem -->
+								<li class="el_work_linkItem">
+									<a href="">
 										<i class="fas fa-image"></i>
-									</a></li>
-							</ul><!-- /.works__link -->
-						</div><!-- /.works -->
-					</div><!-- /.works_imgWrapper -->
+									</a>
+								</li><!-- /.el_work_linkItem -->
+							</ul><!-- /.bl_work_linkWrapper -->
+						</div><!-- /.bl_work_info -->
+					</div><!-- /.-only -->
+					<figure class="bl_work_img">
+						<img src="./images/works/03-takamina-link3.jpg" alt="">
+					</figure><!-- /.bl_work_img -->
+				</li>
 
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							パソコンのべんきょうのためのリンク
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							１つ目の「パソコンの勉強に使えるリンク集」のあと、もう少しこんなのにしたい！という思いをかなえるために作り上げました。これもコミュニティの勉強会で作りました。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
-
-				</li><!-- /.el_skills_item -->
-				<li class="bl_article bl_article_pfm">
-					<div class="works_imgWrapper hp_shadow">
-						<figure class="el_article_image">
-							<a href="https://horumont.info"><img src="./images/works/04-bochi.jpg" alt=""></a>
-						</figure><!-- /.article_image -->
-						<ul class="works_link_wrapper">
-							<li><a href="">
-									<i class="fab fa-github"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-external-link-alt"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-image"></i>
-								</a></li>
-						</ul><!-- /.works__link -->
-					</div><!-- /.works_imgWrapper -->
-
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
+				<li id="bochi"class="bl_work_inner bl_work hp_shadow ">
+					<div class="bl_work_info ">
+						<div class="bl_work_title">
 							ぼちぼちブログ
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							WordPressブログ。無料テーマCocoonを使用しています。自分の経験を発信できればと思って作りました。広告やアフィリエイトなども少しここで体験しようと思っています。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
+						</div><!-- /.bl_work_title -->
+						<div class="bl_work_desc_wrapper  hidden">
+							<p class="bl_work_desc">
+								TECHMEETSさんにいただいた画像カンプからコーディングしました。レスポンシブにも対応しています。
+							</p><!-- /.bl_work_desc -->
+							<ul class="bl_work_linkWrapper">
+								<li class="el_work_linkItem">
+									<a href="">
+										<i class="fab fa-github"></i>
+									</a>
+								</li><!-- /.el_work_linkItem -->
+								<li class="el_work_linkItem">
+									<a href="">
+										<i class="fas fa-external-link-alt"></i>
+									</a>
+								</li><!-- /.el_work_linkItem -->
+								<li class="el_work_linkItem">
+									<a href="">
+										<i class="fas fa-image"></i>
+									</a>
+								</li><!-- /.el_work_linkItem -->
+							</ul><!-- /.bl_work_linkWrapper -->
+						</div><!-- /.bl_work_info -->
+					</div><!-- /.-only -->
+					<figure class="bl_work_img">
+						<img src="./images/works/04-bochi.jpg" alt="">
+					</figure><!-- /.bl_work_img -->
+				</li>
 
-				</li><!-- /.el_skills_item -->
-				<li class="bl_article bl_article_pfm">
-					<div class="works_imgWrapper hp_shadow">
-						<figure class="el_article_image">
-							<a href="https://horumont.info"><img src="./images/works/05-ytu.jpg" alt=""></a>
-						</figure><!-- /.article_image -->
-						<ul class="works_link_wrapper">
-							<li><a href="">
-									<i class="fab fa-github"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-external-link-alt"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-image"></i>
-								</a></li>
-						</ul><!-- /.works__link -->
-					</div><!-- /.works_imgWrapper -->
+				<li id="ytu" class="bl_work_inner bl_work hp_shadow ">
+					<div class="bl_work_info ">
+						<div class="bl_work_title">
+							八尾市教職員組合
+						</div><!-- /.bl_work_title -->
+						<div class="bl_work_desc_wrapper  hidden">
+							<p class="bl_work_desc">
+								TECHMEETSさんにいただいた画像カンプからコーディングしました。レスポンシブにも対応しています。
+							</p><!-- /.bl_work_desc -->
+							<ul class="bl_work_linkWrapper">
+								<li class="el_work_linkItem">
+									<a href="">
+										<i class="fab fa-github"></i>
+									</a>
+								</li><!-- /.el_work_linkItem -->
+								<li class="el_work_linkItem">
+									<a href="">
+										<i class="fas fa-external-link-alt"></i>
+									</a>
+								</li><!-- /.el_work_linkItem -->
+								<li class="el_work_linkItem">
+									<a href="">
+										<i class="fas fa-image"></i>
+									</a>
+								</li><!-- /.el_work_linkItem -->
+							</ul><!-- /.bl_work_linkWrapper -->
+						</div><!-- /.bl_work_info -->
+					</div><!-- /.-only -->
+					<figure class="bl_work_img">
+						<img src="./images/works/05-ytu.jpg" alt="">
+					</figure><!-- /.bl_work_img -->
+				</li>
 
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							八尾市教職員組合　新規採用者向けLP
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							ライティング、情報設計、デザイン、コーディングをしました。ターゲットが市内の教職員なので、基本的な流入経路はチラシにつけたQRコードです。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
-				</li><!-- /.el_skills_item -->
-
-				<li class="bl_article bl_article_pfm">
-					<div class="works_imgWrapper hp_shadow">
-						<figure class="el_article_image">
-							<a href="https://horumont.info"><img src="./images/works/06-micro-cms.jpg" alt=""></a>
-						</figure><!-- /.article_image -->
-						<ul class="works_link_wrapper">
-							<li><a href="">
-									<i class="fab fa-github"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-external-link-alt"></i>
-								</a></li>
-							<li><a href="">
-									<i class="fas fa-image"></i>
-								</a></li>
-						</ul><!-- /.works__link -->
-					</div><!-- /.works_imgWrapper -->
-
-					<div class="bl_skills_txtWrapper">
-						<h3 class="el_skills_itemHeading">
-							Gatsby-microCMS連携ブログサイト
-						</h3><!-- /.el_skills_itemHeading -->
-						<p class="el_skills_item_txt">
-							フロントにGatbyjs ヘッドレスCMSにmicroCMSを使ってブログサイトを作成。デザインはstartBootstrapのテンプレートを使用しました。
-						</p><!-- /.el_skills_item_txt -->
-					</div>
-					<!--/bl_skills_txtWrapper -->
-
-				</li><!-- /.el_skills_item -->
 
 
 			</ul>
