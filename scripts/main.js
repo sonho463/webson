@@ -94,27 +94,32 @@ setTimeout(hamburgerAnimate, 3500);
 
 //　実績ブロックのモーダルウィンドウの動作
 
+
+
+
 const techmeets = document.querySelector('#techmeets');
 const overLay = document.querySelector('#over-lay');
 
-const getHoverItem = () => {
-	window.onmousemove = function(){
-		var ele = document.querySelector(":hover");
-		}
-		return ele.id;
+function getId(ele){
+	var attr = ele.getAttribute("id");
+	console.log(attr);
 }
 
-const modalActive = (work) => {
-	overLay.classList.remove('hidden');
-	techmeets.classList.add('modal');
-	// work.classList.add('modal');
-}
+let currentWork = document.getElementById(getId(techmeets));
 
-const modalClose = () => {
-	overLay.classList.add('hidden');
-	techmeets.classList.remove('modal');
-}
 
-techmeets.addEventListener('click', modalActive);
+// const modalOpen = (work) => {
+// 	overLay.classList.remove('hidden');
+// 	// techmeets.classList.add('modal');
+// 	work.currentTarget.classList.toggle('modal');
+// }
 
-overLay.addEventListener('click', modalClose)
+// const modalClose = (work) => {
+// 	work.currentTarget.classList.add('hidden');
+// 	console.log(work.currentTarget);
+// 	techmeets.classList.toggle('modal');
+// }
+
+// techmeets.addEventListener('click', {work: techmeets, handleEvent: modalOpen});
+
+// overLay.addEventListener('click', {work: techmeets, handleEvent: modalClose});

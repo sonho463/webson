@@ -5,7 +5,7 @@
 
 body {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
-  max-width: 1600px;
+  // max-width: 1600px;
   text-align: justify;
   background-color: $--main-secondary;
 }
@@ -327,14 +327,13 @@ li {
 }
 
 .bl_work_inner {
-	transition: all 2s;
-  width: 30%;
-  height: 300px;
-  overflow: hidden;
-  padding: 30px;
   display: flex;
   flex-direction: column-reverse;
   gap: 5px;
+  width: 30%;
+  height: 300px;
+  padding: 30px;
+  overflow: hidden;
   position: relative;
   vertical-align: middle;
   &::before {
@@ -364,6 +363,8 @@ li {
     }
   }
 }
+
+
 
 
 
@@ -449,6 +450,14 @@ li {
 	left:0;
 	width: 100vw;
 	height: 100vh;
+}
+
+#work-heading{
+	cursor: pointer;
+}
+
+#close{
+	cursor: pointer;
 }
 
 
