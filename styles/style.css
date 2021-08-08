@@ -300,6 +300,10 @@ li {
   color: white;
 }
 
+.work-list {
+  position: relative;
+}
+
 .bl_article_pfm {
   width: 100%;
   font-size: 24px;
@@ -414,15 +418,15 @@ li {
 }
 
 .modal .bl_work_title {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .modal.bl_work_inner {
-  z-index: 110;
+  z-index: 999;
   position: absolute;
   right: 25vw;
   width: 50vw;
-  height: fit-content;
+  height: 80vh;
   background-color: #fff;
   flex-direction: column;
   border-radius: 20px;
@@ -430,6 +434,10 @@ li {
 
 .modal.bl_work_inner::before {
   display: none;
+}
+
+.modal .bl_work_img {
+  overflow: scroll;
 }
 
 .modal .bl_work_desc {
@@ -443,7 +451,7 @@ li {
 }
 
 .modal .bl_work_linkWrapper i {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 .modal .bl_work_img {

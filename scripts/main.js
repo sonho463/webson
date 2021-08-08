@@ -94,32 +94,60 @@ setTimeout(hamburgerAnimate, 3500);
 
 //　実績ブロックのモーダルウィンドウの動作
 
+// DOM設定
+const techmeets 	= document.querySelector('#techmeets');
+const studyLink01 = document.querySelector('#study-link01');
+const studyLink02 = document.querySelector('#study-link02');
+const bochi 			= document.querySelector('#bochi');
+const ytu 				= document.querySelector('#ytu');
+
+const worksArray = document.querySelectorAll('.bl_work');
+const overLay 		= document.querySelector('#over-lay');
+
+// モーダル開く
+const addModalToTechmeets = () => {
+	techmeets.classList.add('modal');
+	overLay.classList.remove('hidden');
+}
+techmeets.addEventListener('click', addModalToTechmeets);
+
+const addModalToStudyLink01 = () => {
+	studyLink01.classList.add('modal');
+	overLay.classList.remove('hidden');
+}
+studyLink01.addEventListener('click', addModalToStudyLink01);
+
+const addModalToStudyLink02 = () => {
+	studyLink02.classList.add('modal');
+	overLay.classList.remove('hidden');
+}
+studyLink02.addEventListener('click', addModalToStudyLink02);
+
+const addModalToBochi = () => {
+	bochi.classList.add('modal');
+	overLay.classList.remove('hidden');
+}
+bochi.addEventListener('click', addModalToBochi);
+
+const addModalToYtu = () => {
+	ytu.classList.add('modal');
+	overLay.classList.remove('hidden');
+}
+ytu.addEventListener('click', addModalToYtu);
 
 
-
-const techmeets = document.querySelector('#techmeets');
-const overLay = document.querySelector('#over-lay');
-
-function getId(ele){
-	var attr = ele.getAttribute("id");
-	console.log(attr);
+// モーダル閉じる
+const closeModal = () => {
+	console.log('start');
+	console.log(worksArray);
+	worksArray.forEach((work)=>{
+		console.log(work)
+		if(work.classList.contains('modal')){
+			console.log(work.classList.contains('modal'))
+			work.classList.remove('modal');
+		}
+	})
+	overLay.classList.add('hidden');
 }
 
-let currentWork = document.getElementById(getId(techmeets));
-
-
-// const modalOpen = (work) => {
-// 	overLay.classList.remove('hidden');
-// 	// techmeets.classList.add('modal');
-// 	work.currentTarget.classList.toggle('modal');
-// }
-
-// const modalClose = (work) => {
-// 	work.currentTarget.classList.add('hidden');
-// 	console.log(work.currentTarget);
-// 	techmeets.classList.toggle('modal');
-// }
-
-// techmeets.addEventListener('click', {work: techmeets, handleEvent: modalOpen});
-
-// overLay.addEventListener('click', {work: techmeets, handleEvent: modalClose});
+overLay.addEventListener('click', closeModal)
