@@ -94,6 +94,8 @@ setTimeout(hamburgerAnimate, 3500);
 
 //　実績ブロックのモーダルウィンドウの動作
 
+
+
 // DOM設定
 const techmeets 	= document.querySelector('#techmeets');
 const studyLink01 = document.querySelector('#study-link01');
@@ -104,36 +106,56 @@ const ytu 				= document.querySelector('#ytu');
 const worksArray = document.querySelectorAll('.bl_work');
 const overLay 		= document.querySelector('#over-lay');
 
+function ScrollWindow(elem) {
+	var element = document.getElementById(elem);
+	var rect = element.getBoundingClientRect();
+	var elemtop = rect.top + window.pageYOffset;
+	// document.documentElement.scrollTop = elemtop;
+	document.documentElement.scrollTo({
+		top: elemtop,
+		behavior: 'smooth'
+	})
+}
+
+
+
 // モーダル開く
 const addModalToTechmeets = () => {
+	ScrollWindow('techmeets');
 	techmeets.classList.add('modal');
-	overLay.classList.remove('hidden');
+	overLay.classList.remove('hidden')
 }
 techmeets.addEventListener('click', addModalToTechmeets);
 
 const addModalToStudyLink01 = () => {
+	ScrollWindow('study-link01');
 	studyLink01.classList.add('modal');
 	overLay.classList.remove('hidden');
 }
 studyLink01.addEventListener('click', addModalToStudyLink01);
 
 const addModalToStudyLink02 = () => {
+	ScrollWindow('study-link02');
 	studyLink02.classList.add('modal');
 	overLay.classList.remove('hidden');
 }
 studyLink02.addEventListener('click', addModalToStudyLink02);
 
 const addModalToBochi = () => {
+	ScrollWindow('bochi');
 	bochi.classList.add('modal');
 	overLay.classList.remove('hidden');
 }
 bochi.addEventListener('click', addModalToBochi);
 
 const addModalToYtu = () => {
+	ScrollWindow('ytu');
 	ytu.classList.add('modal');
 	overLay.classList.remove('hidden');
 }
 ytu.addEventListener('click', addModalToYtu);
+
+
 
 
 // モーダル閉じる
