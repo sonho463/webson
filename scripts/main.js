@@ -38,9 +38,10 @@ TweenMax.set(".el_arrow", {
 });
 
 const arrowAnimate = () => {
-  TweenMax.to(".el_arrow", 0.5, {
-    rotation: "360",
+  TweenMax.to(".el_arrow", 2, {
+    rotation: "350",
     opacity: "1",
+		ease: "Back.easeOut",
   });
 };
 
@@ -57,6 +58,20 @@ const stagger = () => {
     0.2
   );
 };
+
+TweenMax.set("#phonetic", {
+  opacity: "0",
+  y: "50",
+});
+
+const phoneticAnimate = () => {
+  TweenMax.to("#phonetic", 1, {
+    opacity: "1",
+    y: "0",
+  });
+};
+
+
 
 TweenMax.set(".textAnimate", {
   opacity: "0",
@@ -88,6 +103,7 @@ hamburger.addEventListener("click", function () {
 setTimeout(stagger, 1000);
 setTimeout(arrowAnimate, 2500);
 setTimeout(textAnimate, 3500);
+setTimeout(phoneticAnimate, 3500);
 setTimeout(hamburgerAnimate, 3500);
 
 //　実績ブロックのモーダルウィンドウの動作

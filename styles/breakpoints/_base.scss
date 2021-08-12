@@ -42,6 +42,8 @@ li {
   color: $--font-cBlack;
 }
 
+
+
 .ly_cont_bgBlue {
   background-color: $--main-primary;
   color: #fff;
@@ -61,12 +63,12 @@ li {
   font-family: sawarabi-mincho;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 .bl_description__white {
   font-family: sawarabi-mincho;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 // header
@@ -99,18 +101,15 @@ li {
   gap: 20px;
   background-color: $--main-secondary;
   border-radius: 20px;
-  // visibility:hidden;
-  // width: 0;
-  // position: absolute;
-  // top: 300px;
+	transform: scale(0);
+	transition: 2s;
 }
-// .open{
-// 	top: 50px !important;
-// 	right: 50px !important;
-// 	visibility: visible;
-// 	transition: 3s;
-// 	width: fit-content;
-// }
+
+.open {
+	transition: 3s;
+  transform: scale(1);
+	transform-origin: right;
+}
 
 .bl_headerNav_item {
   width: fit-content;
@@ -131,6 +130,8 @@ li {
     transition: 0.7s;
   }
 }
+
+
 
 // hamburger
 
@@ -161,6 +162,8 @@ li {
   }
 }
 
+
+
 // hero >>>
 .ly_cont_hero {
   width: 80%;
@@ -176,26 +179,32 @@ li {
   position: absolute;
   top: 230px;
   right: 140px;
-  width: 200px;
+  width: 4.5vw;
   clip-path: circle();
   z-index: 9999;
 }
 
 .bl_hero_heading {
   font-family: "Roboto";
-  font-size: 220px;
+  font-size: 15vw;
   line-height: 1;
 }
 
 .char {
   display: inline-block;
-  margin-right: -65px;
+  margin-right: -4.5vw;
   transform: translateX(-300px);
 }
 
 .bl_hero_subHeading {
   font-size: 4vw;
   line-height: 1;
+}
+
+.bl_hero_phonetic{
+	font-size:6vw;
+	line-height: 0.2;
+	margin-bottom: 50px;
 }
 
 .bl_hero_description {
@@ -235,10 +244,25 @@ li {
 
 .bl_card_description {
   font-family: sawarabi-mincho;
-  font-size: 24px;
+  font-size: 1.125rem;
+	line-height: 1.8;
+
 }
 
 // price
+
+.price-table{
+	// color: $--main-primary;
+	// background-color: $--main-secondary;
+	font-family: roboto;
+	td{
+		border: 1px solid $--main-secondary;
+		padding: 20px;
+		text-align: left;
+		width: 25vw;
+	}
+
+}
 
 // skills
 .el_heading_wrapper {
@@ -261,7 +285,7 @@ li {
 
 .el_skills_item_txt {
   font-family: sawarabi-mincho;
-	font-size: 20px;
+	font-size: 1.125rem;
 }
 
 .bl_article {
@@ -323,7 +347,7 @@ li {
 
 // footer
 
-// modalTest
+// modal
 .bl_work_wrapper {
   z-index: 300;
   display: flex;
@@ -394,9 +418,6 @@ li {
   display: none;
 }
 
-.open {
-  display: block;
-}
 
 .btn_close {
   display: none;
@@ -422,7 +443,7 @@ li {
     top: 0;
     left: 0;
     width: 400px;
-    height: 800px;
+    height: 90vh;
     background-color: #fff;
     flex-direction: column;
     border-radius: 20px;
@@ -438,8 +459,7 @@ li {
 
   .btn_close {
     display: block;
-    position: absolute;
-    bottom: 0;
+		margin: 0 auto;
   }
 
   .bl_work_desc {
