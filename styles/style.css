@@ -198,11 +198,20 @@ li {
 
 .ly_cont_hero {
   width: 80%;
-  height: 700px;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
+}
+
+.faceBall {
+  position: absolute;
+  top: 230px;
+  right: 140px;
+  width: 200px;
+  clip-path: circle();
+  z-index: 9999;
 }
 
 .bl_hero_heading {
@@ -253,6 +262,7 @@ li {
 
 .bl_card_description {
   font-family: sawarabi-mincho;
+  font-size: 24px;
 }
 
 .el_heading_wrapper {
@@ -275,6 +285,7 @@ li {
 
 .el_skills_item_txt {
   font-family: sawarabi-mincho;
+  font-size: 20px;
 }
 
 .bl_article {
@@ -329,6 +340,7 @@ li {
 }
 
 .bl_work_wrapper {
+  z-index: 300;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -366,7 +378,7 @@ li {
   line-height: 200px;
   opacity: 0;
   transform: translateY(200px);
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .bl_work_inner:hover::before {
@@ -401,13 +413,20 @@ li {
   display: block;
 }
 
+.btn_close {
+  display: none;
+  text-align: right;
+  z-index: 9999;
+}
+
 .modal {
   transition: all 2s;
+  z-index: 500;
 }
 
 .modal .bl_work_info {
   color: #1b2f60;
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -416,12 +435,12 @@ li {
 }
 
 .modal .bl_work_inner {
-  z-index: 999;
+  z-index: 900;
   position: absolute;
   top: 0;
   left: 0;
-  width: 30vw;
-  height: 80vh;
+  width: 400px;
+  height: 800px;
   background-color: #fff;
   flex-direction: column;
   border-radius: 20px;
@@ -433,11 +452,13 @@ li {
 
 .modal .bl_work_img {
   overflow: scroll;
-  width: 400px;
+  width: 100%;
 }
 
 .modal .btn_close {
-  display: none;
+  display: block;
+  position: absolute;
+  bottom: 0;
 }
 
 .modal .bl_work_desc {
@@ -452,11 +473,6 @@ li {
 
 .modal .bl_work_linkWrapper i {
   font-size: 30px;
-}
-
-.modal .bl_work_img {
-  width: 500px;
-  margin: 50px auto;
 }
 
 .over-lay {
@@ -475,5 +491,58 @@ li {
 
 #close {
   cursor: pointer;
+}
+
+form {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #f0f8ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #f0f8ff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #f0f8ff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #1b2f60;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #ffde59;
+  color: #1b2f60;
 }
 /*# sourceMappingURL=style.css.map */

@@ -164,12 +164,21 @@ li {
 // hero >>>
 .ly_cont_hero {
   width: 80%;
-  height: 700px;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
   // margin-top: 100px;
+}
+
+.faceBall {
+  position: absolute;
+  top: 230px;
+  right: 140px;
+  width: 200px;
+  clip-path: circle();
+  z-index: 9999;
 }
 
 .bl_hero_heading {
@@ -226,6 +235,7 @@ li {
 
 .bl_card_description {
   font-family: sawarabi-mincho;
+  font-size: 24px;
 }
 
 // price
@@ -251,6 +261,7 @@ li {
 
 .el_skills_item_txt {
   font-family: sawarabi-mincho;
+	font-size: 20px;
 }
 
 .bl_article {
@@ -314,6 +325,7 @@ li {
 
 // modalTest
 .bl_work_wrapper {
+  z-index: 300;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -386,32 +398,34 @@ li {
   display: block;
 }
 
-.btn_close{
-	display: none;
+.btn_close {
+  display: none;
+  text-align: right;
+  z-index: 9999;
 }
 
 .modal {
   transition: all 2s;
+  z-index: 500;
 
   .bl_work_info {
     color: $--main-primary;
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
   }
   .bl_work_title {
     font-size: 2rem;
   }
   .bl_work_inner {
-    z-index: 999;
+    z-index: 900;
     position: absolute;
     top: 0;
     left: 0;
-    width: 30vw;
-    height: 80vh;
+    width: 400px;
+    height: 800px;
     background-color: #fff;
     flex-direction: column;
     border-radius: 20px;
-
     &::before {
       display: none;
     }
@@ -419,9 +433,14 @@ li {
 
   .bl_work_img {
     overflow: scroll;
-    width: 400px;
+    width: 100%;
   }
 
+  .btn_close {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
 
   .bl_work_desc {
     display: block;
@@ -434,11 +453,6 @@ li {
     i {
       font-size: 30px;
     }
-  }
-
-  .bl_work_img {
-    width: 500px;
-    margin: 50px auto;
   }
 }
 
@@ -459,4 +473,58 @@ li {
 
 #close {
   cursor: pointer;
+}
+
+// お問い合わせ
+
+form {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid $--main-secondary;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid $--main-secondary;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: $--main-secondary;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: $--main-primary;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: $--accent-primary;
+  color: $--main-primary;
 }

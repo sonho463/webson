@@ -1,0 +1,45 @@
+<!-- priceBlock -->
+		<section class="ly_cont">
+			<div class="ly_intro">
+				<div class="bl_heading">
+					<h2 class="el_heading">
+						料金について
+					</h2>
+				</div><!-- /.bl_heading -->
+
+				<div class="bl_description">
+					<ul>
+						〜以下は基本的な料金です。詳しくはご相談ください。
+						<li>
+							ホームページ制作
+							<ol>
+								<li>オリジナルデザイン １５万円〜</li>
+								<li>テンプレートプラン　５万円〜</li>
+							</ol>
+						</li>
+						<li>
+
+						</li>
+					</ul>
+					<p>
+						ホームページ制作
+					</p>
+				</div><!-- /.bl_description -->
+				<div class="bl_price_content">
+					<p>
+						【ホームページ制作】　15万円〜<br>
+						【保守運用】　１５０００円／月
+
+
+					</p>
+					ウェブサイト制作　１５万円〜
+					一般的なウェブサイト、WordPress、JAMstackなどの技術やページ数などによって変動いたします。まずはご相談ください。
+					ウェブサイトの保守運用　１５０００円／月〜
+					SNS運用代行・SNS運用コンサルティング
+					それぞれ、お客様の業種や状況に合わせて、ご提案いたします。１００００円／月〜
+					　
+
+
+				</div><!-- /.bl_price_content -->
+			</div>
+		</section><!-- /.price -->
